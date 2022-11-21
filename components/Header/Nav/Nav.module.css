@@ -1,0 +1,19 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 50px);
+  margin: auto;
+}
+
+.nav__logo {
+  text-transform: uppercase;
+  font-style: italic;
+  color: var(--secondary-color);
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}

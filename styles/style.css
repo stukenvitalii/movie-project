@@ -1,0 +1,20 @@
+:root {
+    --main-color: #1f2235;
+    --text-color: #FFFFFF;
+    --secondary-color: #f64754;
+     
+    --width: 1380px;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    background-color: #fff;
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color);
+    background-color: var(--main-color);
+    max-width: var(--width);
+    margin: auto;
+}
