@@ -1,6 +1,6 @@
 import React from "react";
 import css from "./Nav.module.css";
-import { ButtonLink } from "../Header/UI/ButtonLink/ButtonLink";
+import { ButtonLink } from "../../UI/ButtonLink/ButtonLink.jsx";
 export const Nav = () => {
   return (
     <nav className={css.nav}>
