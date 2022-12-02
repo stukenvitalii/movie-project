@@ -1,0 +1,12 @@
+.card {
+    width: 100%;
+    background-color: var(--background-color);
+    min-height: 250px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 20px -9px black;
+}
+
+.card__image {
+    position: relative;
+    min-height: 40px;
+}
