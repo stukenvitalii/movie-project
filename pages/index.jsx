@@ -18,9 +18,9 @@ const IndexPage = () => {
           <Button>Let's read</Button>
         </div>
         <section className={css.cards}>
-          {cardsMock.map((card) => {
-            <Card key={card.id} {...card} />;
-          })}
+          {cardsMock.map((card) => (
+            <Card key={card.id} {...card} />
+          ))}
         </section>
       </main>
     </Layout>
