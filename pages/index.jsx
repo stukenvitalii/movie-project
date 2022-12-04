@@ -6,6 +6,7 @@ import { Button } from "../components/UI/Button/Button";
 import { Card } from "../components/Cards/Card";
 import { cardsMock } from "../constants/mock";
 
+
 const IndexPage = () => {
   return (
     <Layout title="Главная страница">
@@ -14,8 +15,8 @@ const IndexPage = () => {
       </header>
       <main className={css.main}>
         <div className={css.main__title}>
-          <h1 className={css.main__logo}>My first blog</h1>
-          <Button>Let's read</Button>
+          <h1 className={css.main__logo}>POPULAR NOW</h1>
+          <Button>Let's watch</Button>
         </div>
         <section className={css.cards}>
           {cardsMock.map((card) => (

@@ -12,7 +12,7 @@ export const Card = ({ title, img, date, author, description,id }) => {
       <div className={css.card__content}>
         <div className={css.card__about}>
           <span>{author}</span>
-          <span>{date}</span>
+          <span>Year of release: {date}</span>
         </div>
         <Link href={`/blog/${id}`} className={css.card__description}>
           <h2>{title}</h2>
