@@ -1,5 +1,6 @@
 .card {
     width: 100%;
+    max-width: 700px;
     background-color: var(--background-color);
     min-height: 250px;
     border-radius: 10px;
@@ -17,9 +18,10 @@
 }
 
 .card__image img {
+    /* align-items: center; */
     width:100%;
     max-width: 700px;
-    object-fit: cover;
+    /* object-fit: cover; */
     border-radius: 10px 10px 0 0;
 }
 
