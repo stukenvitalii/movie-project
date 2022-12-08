@@ -4,9 +4,9 @@ import { Nav } from "../components/Header/Nav/Nav";
 import css from "./index.module.css";
 import { Button } from "../components/UI/Button/Button";
 import { Card } from "../components/Cards/Card";
-import { cardsMock } from "../constants/mock";
 
-const IndexPage = () => {
+const IndexPage = ({data}) => {
+  console.log(data);
   return (
     <Layout title="Главная страница">
       <header>
@@ -18,13 +18,38 @@ const IndexPage = () => {
           <Button>Let's read</Button>
         </div>
         <section className={css.cards}>
-          {cardsMock.map((card) => (
-            <Card key={card.id} {...card} />
+          {data.map((el, index) => (
+            <Card key={index} id={index} tags={el.tags} {...el} />
           ))}
         </section>
       </main>
     </Layout>
   );
 };
+
+export async function getStaticProps(context) {
+  const result = await fetch("https://leti.kzteams.ru/api/blog/page")
+    .then((res) => {
+      if (res.ok) {
+        return res.json();
+      } else throw Error(res.statusText);
+    })
+    .catch((err) => console.error(err));
+  if (!Array.isArray(result)) {
+    return {
+      props: {
+        data: [],
+      },
+      revalidate: 100,
+    };
+  } else {
+    return {
+      props: {
+        data: [...result],
+      },
+      revalidate: 100,
+    };
+  }
+}
 
 export default IndexPage;
