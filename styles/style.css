@@ -3,8 +3,8 @@
     --text-color: #FFFFFF;
     --secondary-color: #f64754;
     --background-color: #222538;
-     
     --width: 1380px;
+    --link-color: rgb(132, 132,255);
 }
 
 html {

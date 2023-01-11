@@ -10,7 +10,7 @@ export const Nav = () => {
           <ButtonLink href="/profile">Профиль</ButtonLink>
         </li>
         <li>
-          <ButtonLink href="/login">Вход</ButtonLink>
+          <ButtonLink href="/sign-in">Вход</ButtonLink>
         </li>
         <li>
           <ButtonLink href="/contacts">Контакты</ButtonLink>

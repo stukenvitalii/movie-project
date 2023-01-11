@@ -10,7 +10,7 @@ const IndexPage = ({data}) => {
   return (
     <Layout title="Главная страница">
       <header>
-        <Nav />
+      <Nav />
       </header>
       <main className={css.main}>
         <div className={css.main__title}>
